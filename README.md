@@ -1,4 +1,4 @@
-#Öğrenciler
+# Öğrenciler
 
 - Mustafa Mete / 2202131015
 - Emine Avcu / 2202131006
@@ -12,7 +12,6 @@
 ## Klasor yapisi
 
 Aciklama:
-- Kod `bots/news_fetch_bot.py` dosyasinda.
 - Değişkenler `.env` dosyasinda.
 - Cekilen veriler `data/` klasorune kaydedilir.
 
@@ -35,9 +34,20 @@ NEWS_LANGUAGE=tr
 NEWS_COUNTRY=tr
 NEWS_CATEGORY=
 NEWS_MAX_PAGES=3
-NEWS_OUT_JSON=data/headlines_raw.json
-NEWS_OUT_CSV=data/headlines_raw.csv
+NEWS_OUT_JSON=data/headlines_newsdata.json
+NEWS_OUT_CSV=data/headlines_newsdata.csv
 NEWS_APPEND_MODE=true
+
+NEWSAPI_API_KEY=BURAYA_NEWSAPI_KEY_YAZ
+NEWSAPI_QUERY=teknoloji
+NEWSAPI_LANGUAGE=tr
+NEWSAPI_COUNTRY=tr
+NEWSAPI_CATEGORY=
+NEWSAPI_PAGE_SIZE=50
+NEWSAPI_MAX_PAGES=3
+NEWSAPI_OUT_JSON=data/headlines_newsapi.json
+NEWSAPI_OUT_CSV=data/headlines_newsapi.csv
+NEWSAPI_APPEND_MODE=true
 ```
 
 ## Veri cekme botunu calistirma
@@ -45,12 +55,20 @@ NEWS_APPEND_MODE=true
 Asagidaki komutla botu calistir:
 
 ```bash
-python bots/news_fetch_bot.py
+python bots/newsdata_fetch_bot.py
+```
+
+NewsAPI botunu calistirmak icin:
+
+```bash
+python bots/newsapi_fetch_bot.py
 ```
 
 Olusan dosyalar:
-- `data/headlines_raw.json`
-- `data/headlines_raw.csv`
+- `data/headlines_newsdata.json`
+- `data/headlines_newsdata.csv`
+- `data/headlines_newsapi.json`
+- `data/headlines_newsapi.csv`
 
 ## Parametreler
 
@@ -63,6 +81,16 @@ Olusan dosyalar:
 - `NEWS_OUT_JSON`: JSON cikti yolu
 - `NEWS_OUT_CSV`: CSV cikti yolu
 - `NEWS_APPEND_MODE`: `true` ise eski veriye ekler ve tekrar kayitlari temizler
+- `NEWSAPI_API_KEY`: NewsAPI anahtari
+- `NEWSAPI_QUERY`: aranacak konu (bos ise ulke/kategori ile ceker)
+- `NEWSAPI_LANGUAGE`: dil kodu
+- `NEWSAPI_COUNTRY`: ulke kodu
+- `NEWSAPI_CATEGORY`: kategori
+- `NEWSAPI_PAGE_SIZE`: sayfa basi haber sayisi
+- `NEWSAPI_MAX_PAGES`: cekilecek sayfa sayisi
+- `NEWSAPI_OUT_JSON`: NewsAPI JSON cikti yolu
+- `NEWSAPI_OUT_CSV`: NewsAPI CSV cikti yolu
+- `NEWSAPI_APPEND_MODE`: ekleme + tekrar temizleme modu
 
 Komut satiri parametreleri:
 - `--query`, `--language`, `--country`, `--category`, `--max-pages`
