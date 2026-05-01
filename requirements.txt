@@ -1,2 +1,7 @@
 requests
 newsapi-python
+scikit-learn
+nltk
+beautifulsoup4
+playwright
+matplotlib

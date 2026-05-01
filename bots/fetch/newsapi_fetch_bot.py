@@ -134,12 +134,11 @@ def fetch_newsapi(
 
     if normalized_language and not use_language:
         print(
-            "Bilgi: NewsAPI bu dil kodunu desteklemiyor. Dil filtresi kapatilarak devam edilecek."
+            "NewsAPI bu dil kodunu desteklemiyor. Dil filtresi kapatilarak devam edilecek."
         )
 
     for page in range(1, max_pages + 1):
         try:
-            # top-headlines'ta q ile country/category birlikte kullanilamaz.
             if query:
                 payload = client.get_top_headlines(
                     q=query,
@@ -160,13 +159,13 @@ def fetch_newsapi(
             if "426" in error_text:
                 limit_info["upgrade_required"] = True
                 print(
-                    "Uyari: NewsAPI paketi bu istek tipi icin yetersiz (426 Upgrade Required).",
+                    "NewsAPI paketi bu istek tipi icin yetersiz (426 Upgrade Required).",
                     file=sys.stderr,
                 )
                 break
             if "429" in error_text:
                 print(
-                    "Uyari: NewsAPI limiti asildi (429). Daha fazla veri cekilemedi.",
+                    "NewsAPI limiti asildi (429). Daha fazla veri cekilemedi.",
                     file=sys.stderr,
                 )
                 break
@@ -221,12 +220,12 @@ def fetch_newsapi_from_sources(
         if "426" in error_text:
             limit_info["upgrade_required"] = True
             print(
-                "Uyari: Kaynak listesini cekmek icin paket yetersiz (426).",
+                "Kaynak listesini cekmek icin paket yetersiz (426).",
                 file=sys.stderr,
             )
             return headlines, request_count, limit_info
         if "429" in error_text:
-            print("Uyari: Kaynak listesi cekerken API limiti asildi (429).", file=sys.stderr)
+            print("Kaynak listesi cekerken API limiti asildi (429).", file=sys.stderr)
             return headlines, request_count, limit_info
         raise
 
@@ -249,12 +248,12 @@ def fetch_newsapi_from_sources(
             if "426" in error_text:
                 limit_info["upgrade_required"] = True
                 print(
-                    "Uyari: Kaynak bazli cekim bu istekte paket gerektiriyor (426).",
+                    "Kaynak bazli cekim bu istekte paket gerektiriyor (426).",
                     file=sys.stderr,
                 )
                 break
             if "429" in error_text:
-                print("Uyari: Kaynak bazli cekimde API limiti asildi (429).", file=sys.stderr)
+                print("Kaynak bazli cekimde API limiti asildi (429).", file=sys.stderr)
                 break
             continue
 
@@ -283,21 +282,21 @@ def main():
     load_env_file(".env")
 
     parser = argparse.ArgumentParser(
-        description="NewsAPI'den basliklari cekip data klasorune kaydeder."
+        description="NewsAPI'den başlıkları cekip data klasorune kaydeder."
     )
     parser.add_argument("--api-key", default=os.getenv("NEWSAPI_API_KEY"))
-    parser.add_argument("--query", default=env_str("NEWSAPI_QUERY", "teknoloji"))
-    parser.add_argument("--language", default=env_str("NEWSAPI_LANGUAGE", "tr"))
-    parser.add_argument("--country", default=env_str("NEWSAPI_COUNTRY", "tr"))
+    parser.add_argument("--query", default=env_str("NEWSAPI_QUERY", "technology"))
+    parser.add_argument("--language", default=env_str("NEWSAPI_LANGUAGE", "en"))
+    parser.add_argument("--country", default=env_str("NEWSAPI_COUNTRY", "us"))
     parser.add_argument("--category", default=env_str("NEWSAPI_CATEGORY", ""))
     parser.add_argument("--page-size", type=int, default=env_int("NEWSAPI_PAGE_SIZE", 50))
     parser.add_argument("--max-pages", type=int, default=env_int("NEWSAPI_MAX_PAGES", 3))
     parser.add_argument("--max-sources", type=int, default=env_int("NEWSAPI_MAX_SOURCES", 20))
     parser.add_argument(
-        "--out-json", default=env_str("NEWSAPI_OUT_JSON", "data/headlines_newsapi.json")
+        "--out-json", default=env_str("NEWSAPI_OUT_JSON", "data/all/headlines_all.json")
     )
     parser.add_argument(
-        "--out-csv", default=env_str("NEWSAPI_OUT_CSV", "data/headlines_newsapi.csv")
+        "--out-csv", default=env_str("NEWSAPI_OUT_CSV", "data/all/headlines_all.csv")
     )
     parser.add_argument(
         "--append-mode",
@@ -312,10 +311,12 @@ def main():
         help="Aciksa kaynak listesi uzerinden ek basliklar cekerek veri hacmini artirir.",
     )
     args = parser.parse_args()
+    args.language = "en"
+    args.country = "us"
 
     if not args.api_key:
         print(
-            "Hata: NewsAPI anahtari eksik. NEWSAPI_API_KEY degerini .env dosyasina yazin veya --api-key kullanin.",
+            "Hata: NewsAPI anahtari eksik.",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -334,7 +335,6 @@ def main():
         print(f"Hata: NewsAPI istegi basarisiz oldu: {exc}", file=sys.stderr)
         sys.exit(1)
 
-    # q + language ile sonuc gelmezse country/category moduna otomatik gec.
     if not headlines and args.query:
         print(
             "Bilgi: Sorgu modunda sonuc bulunamadi. Ulke/kategori moduyla tekrar deneniyor."
@@ -360,7 +360,7 @@ def main():
         print("Hic yeni baslik cekilemedi.")
         if limit_info.get("upgrade_required"):
             print(
-                "Not: NewsAPI mevcut planda bu endpoint/istekleri engelliyor. Panelden paket veya endpoint yetkisini kontrol edin."
+                "Not: NewsAPI mevcut planda bu endpoint/istekleri engelliyor.
             )
         if limit_info["retry_after"]:
             print(f"Tahmini bekleme suresi (saniye): {limit_info['retry_after']}")

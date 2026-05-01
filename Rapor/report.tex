@@ -1,0 +1,198 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[turkish]{babel}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{setspace}
+\geometry{margin=2.5cm}
+\setstretch{1.15}
+
+\title{Haber Ba\c{s}l\i{}klar\i{}nda \c{C}o\u{g}altma Tespiti:\\
+Sistem Raporu ve Zipf Analizi}
+\author{Mustafa Mete (2202131015) \and Emine Avcu (2202131006)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Proje \.Ozeti}
+Bu \c{c}al\i{}\c{s}mada farkl\i{} kaynaklardan \.{I}ngilizce haber ba\c{s}l\i{}klar\i{} toplanm\i{}\c{s}, tek bir veri havuzunda birle\c{s}tirilmi\c{s}, normalizasyon uygulanm\i{}\c{s} ve benzer (muhtemel duplicate) ba\c{s}l\i{}klar TF-IDF + cosine similarity ile tespit edilmi\c{s}tir. Ek olarak veri kalitesi ve dilsel da\u{g}\i{}l\i{}m i\c{c}in Zipf analizi ger\c{c}ekle\c{s}tirilmi\c{s}tir.
+
+\section{Repo Denetimi (\.Inceleme Kapsam\i{})}
+Bu rapor haz\i{}rlan\i{}rken depo i\c{c}eri\u{g}i dosya baz\i{}nda taranm\i{}\c{s}, mevcut kod/konfig\"urasyon ve \"uretilen \c{c}\i{}kt\i{}lar\i{}n son durumu okunarak \c{c}\i{}kar\i{}m yap\i{}lm\i{}\c{s}t\i{}r.
+
+\subsection{Kimler Haz\i{}rlad\i{}?}
+Bu projeyi haz\i{}rlayan ekip:
+\begin{itemize}
+    \item Mustafa Mete (2202131015)
+    \item Emine Avcu (2202131006)
+\end{itemize}
+
+\subsection{Dosya Envanteri (Kod ve Ana Dosyalar)}
+\begin{itemize}
+    \item Python fetch botu say\i{}s\i{}: \textbf{3}
+    \item Notebook say\i{}s\i{} (ana): \textbf{1} (\texttt{analysis\_pipeline.ipynb})
+    \item Ana konfig\"urasyon: \texttt{.env}
+    \item Dok\"umantasyon: \texttt{README.md}
+    \item Ba\u{g}\i{}ml\i{}l\i{}klar: \texttt{requirements.txt}
+\end{itemize}
+
+
+\section{Sistem Mimarisi}
+\subsection{Veri Toplama Katman\i{}}
+Veri toplama botlar\i{} yaln\i{}zca \texttt{bots/fetch} alt\i{}nda konumland\i{}r\i{}lm\i{}\c{s}t\i{}r:
+\begin{itemize}
+    \item \texttt{newsdata\_fetch\_bot.py}
+    \item \texttt{newsapi\_fetch\_bot.py}
+    \item \texttt{topic\_search\_fetch\_bot.py}
+\end{itemize}
+
+T\"um botlar \.{I}ngilizce toplama kural\i{} ile (\texttt{en}/\texttt{US}) \c{c}al\i{}\c{s}acak \c{s}ekilde kurgulanm\i{}\c{s} ve veriyi ayn\i{} hedef dosyalara eklemeli (append) yazar:
+\begin{itemize}
+    \item \texttt{data/all/headlines\_all.json}
+    \item \texttt{data/all/headlines\_all.csv}
+\end{itemize}
+
+\subsection{Analiz Katman\i{}}
+Temizleme, normalizasyon, duplicate tespiti ve Zipf analizi tek notebook i\c{c}inde toplanm\i{}\c{s}t\i{}r:
+\begin{itemize}
+    \item \texttt{analysis\_pipeline.ipynb}
+\end{itemize}
+Bu notebook, ham veriyi okuyup i\c{s}leyerek a\c{s}a\u{g}\i{}daki \c{c}\i{}kt\i{}lar\i{} \"uretir:
+\begin{itemize}
+    \item \texttt{data/processed/all/headlines\_normalized\_all.json}
+    \item \texttt{data/processed/all/headlines\_normalized\_all.csv}
+    \item \texttt{data/results/all/duplicate\_pairs\_all.json}
+    \item \texttt{data/results/all/duplicate\_pairs\_all.csv}
+\end{itemize}
+
+\section{Veri ve Say\i{}sal Bulgular}
+A\c{s}a\u{g}\i{}daki de\u{g}erler mevcut \c{c}\i{}kt\i{} dosyalar\i{}ndan al\i{}nm\i{}\c{s}t\i{}r:
+\begin{itemize}
+    \item Ham kay\i{}t say\i{}s\i{} (\texttt{headlines\_all.json}): \textbf{2805}
+    \item Normalize kay\i{}t say\i{}s\i{} (\texttt{headlines\_normalized\_all.json}): \textbf{2798}
+    \item Duplicate \c{c}ift say\i{}s\i{} (\texttt{duplicate\_pairs\_all.json}): \textbf{161}
+    \item Toplam token say\i{}s\i{}: \textbf{21428}
+    \item Tekil kelime (vocabulary) boyutu: \textbf{6619}
+\end{itemize}
+
+\subsection{Kaynak Da\u{g}\i{}l\i{}m\i{} (ilk 10)}
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Kaynak & Kay\i{}t Say\i{}s\i{} \\
+\midrule
+Yahoo Finance & 96 \\
+Let's Data Science & 81 \\
+Nature & 60 \\
+Business Insider & 44 \\
+The Motley Fool & 42 \\
+Google News & 33 \\
+BBC & 28 \\
+The New York Times & 27 \\
+Fortune & 25 \\
+CNBC & 24 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent
+Not: \.{I}lk 10 d\i{}\c{s}\i{}nda da Reuters (24), PR Newswire (21), Benzinga (21), MarketBeat (19), The Guardian (18) gibi kaynaklar veri havuzuna katk\i{} sa\u{g}lam\i{}\c{s}t\i{}r.
+
+\subsection{En S\i{}k Kelimeler (ilk 15)}
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Kelime & Frekans \\
+\midrule
+technology & 153 \\
+stock & 147 \\
+market & 131 \\
+global & 118 \\
+innovation & 111 \\
+energy & 107 \\
+quantum & 107 \\
+space & 104 \\
+computing & 103 \\
+cloud & 95 \\
+business & 94 \\
+iran & 93 \\
+world & 88 \\
+climate & 87 \\
+software & 87 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Duplicate Benzerlik \.{I}statistikleri}
+Duplicate olarak i\c{s}aretlenen \c{c}iftler i\c{c}in similarity de\u{g}erleri:
+\begin{itemize}
+    \item Minimum: \textbf{0.8608}
+    \item Maksimum: \textbf{1.0000}
+    \item Ortalama: \textbf{0.9846}
+    \item Medyan: \textbf{1.0000}
+\end{itemize}
+Bu sonu\c{c}lar, se\c{c}ilen e\c{s}ik (\texttt{0.85}) sonras\i{}nda olduk\c{c}a y\"uksek benzerlikli \c{c}iftlerin kald\i{}\u{g}\i{}n\i{} g\"ostermektedir.
+
+\subsection{Sonu\c{c} Dosyas\i{}ndan \"Ornek \c{C}iftler ve Nedenleri}
+\texttt{data/results/all/duplicate\_pairs\_all.json} dosyas\i{}ndan \"ornekler:
+
+\begin{enumerate}
+    \item \textbf{``In Guatemala, new AI technology will be listening for illegal deforestation''} \\
+    Similarity: \textbf{0.9181} \\
+    \textit{Neden:} Ayn\i{} i\c{c}erik birinde orijinal kaynak ba\c{s}l\i{}\u{g}\i{}, di\u{g}erinde Google News/RSS \"uzerinden ``- news - Mongabay'' ekiyle ge\c{c}iyor. Normalizasyon ekleri temizledi\u{g}i i\c{c}in metinler yak\i{}nla\c{s}\i{}yor.
+
+    \item \textbf{``Fairfax India Holdings Corporation: First Quarter Financial Results''} \\
+    Similarity: \textbf{1.0000} \\
+    \textit{Neden:} Ayn\i{} ba\c{s}l\i{}k farkl\i{} haber da\u{g}\i{}t\i{}m kanallar\i{}nda (Benzinga ve GlobeNewswire) birebir yay\i{}nlanm\i{}\c{s}. Klasik sendikasyon/press release kopyas\i{}.
+
+    \item \textbf{``Fed chair Jerome Powell says ...''} (Google News vs ABC News) \\
+    Similarity: \textbf{0.9309} \\
+    \textit{Neden:} Ayn\i{} haber c\"umlesine bir kaynakta ``Breaking News, Latest News and Videos'' gibi \c{c}evresel ifade eklenmi\c{s}. Normalizasyon sonras\i{} omurga metin ayn\i{} kald\i{}\u{g}\i{} i\c{c}in duplicate olarak i\c{s}aretleniyor.
+
+    \item \textbf{``News | ...''} \textit{vs} \textbf{``E-News | ...''} \\
+    Similarity: \textbf{1.0000} (\texttt{normalized\_title = "news"}) \\
+    \textit{Neden:} Bu bir \textbf{yanl\i{}\c{s} pozitif} \"orne\u{g}idir. A\c{s}\i{}r\i{} agresif temizleme sonucunda farkl\i{} ba\c{s}l\i{}klar ``news'' tokenina kadar d\"u\c{s}m\"u\c{s}. Bu nedenle alakas\i{}z i\c{c}erikler benzer g\"or\"unm\"u\c{s}t\"ur.
+\end{enumerate}
+
+\subsection{Bu Bulgular\i{}n Anlam\i{}}
+\begin{itemize}
+    \item Sonu\c{c} listesindeki \c{c}iftlerin b\"uy\"uk b\"ol\"um\"u ger\c{c}ek sendikasyon/yeniden yay\i{}n kaynakl\i{} duplicate kay\i{}tlard\i{}r.
+    \item Google News, Yahoo/AOL/Globe gibi agregat\"or ge\c{i}\c{s}leri similarity de\u{g}erlerini y\"ukseltmektedir.
+    \item ``news'' gibi tek-kelimeye d\"u\c{s}en normalize ba\c{s}l\i{}klar, duplicate tespit kalitesini olumsuz etkileyen ana risklerden biridir.
+\end{itemize}
+
+\section{Zipf Yasas\i{} Analizi}
+Notebook i\c{c}inde rank-frequency da\u{g}\i{}l\i{}m\i{} log-log d\"uzleminde incelenmi\c{s}tir. Hesaplanan e\u{g}imler:
+\begin{itemize}
+    \item \.{I}lk 300 rank i\c{c}in e\u{g}im: \textbf{-0.628}
+    \item \.{I}lk 100 rank i\c{c}in e\u{g}im: \textbf{-0.522}
+\end{itemize}
+
+Klasik Zipf davran\i{}\c{s}\i{}nda e\u{g}imin -1 civar\i{}nda olmas\i{} beklenir. Bu projede elde edilen de\u{g}erlerin daha d\"u\c{s}\"uk mutlak de\u{g}erde kalmas\i{}n\i{}n ana sebepleri:
+\begin{itemize}
+    \item Veri tipinin haber ba\c{s}l\i{}\u{g}\i{} olmas\i{} (k\i{}sa metinler),
+    \item Veri havuzunun konu odakl\i{} (tech/business/world) toplanmas\i{},
+    \item Kaynak heterojenli\u{g}i ve ba\c{s}l\i{}k stil farklar\i{}.
+\end{itemize}
+
+Bununla birlikte ilk denemelere g\"ore g\"ur\"ult\"u temizli\u{g}i sonras\i{}nda da\u{g}\i{}l\i{}m daha anlaml\i{} hale gelmi\c{s}tir (\"orne\u{g}in \texttt{new}, saf y\i{}l/say\i{} tokenlar\i{} gibi kelimeler filtrelenmi\c{s}tir).
+
+\section{Normalizasyon \.Iyile\c{s}tirmeleri}
+\texttt{analysis\_pipeline.ipynb} i\c{c}indeki normalizasyon ad\i{}m\i{}nda:
+\begin{itemize}
+    \item Stopword temizli\u{g}i (\texttt{nltk}),
+    \item Noise kelime listesi geni\c{s}letme (\texttt{breaking, report, latest, new}),
+    \item Saf say\i{}sal tokenlar\i{}n elenmesi,
+    \item 3 karakterden k\i{}sa tokenlar\i{}n elenmesi
+\end{itemize}
+uygulanm\i{}\c{s}t\i{}r.
+
+\section{Sonu\c{c}}
+Sistem; veri toplama, birle\c{s}tirme, normalizasyon, duplicate tespiti ve Zipf temelli kalite incelemesini tek bir i\c{s} ak\i{}\c{s}\i{}nda tamamlamaktad\i{}r. Elde edilen sonu\c{c}lar pratik bir haber ba\c{s}l\i{}\u{g}\i{} veri seti i\c{c}in tutarl\i{}d\i{}r. Zipf e\u{g}imi klasik uzun edebi metinlere g\"ore d\"u\c{s}\"uk olsa da, veri tipinin do\u{g}as\i{} gere\u{g}i kabul edilebilir bir seviyededir ve temizleme ad\i{}mlar\i{}yla anlaml\i{}l\i{}k belirgin \c{s}ekilde artm\i{}\c{s}t\i{}r.
+
+\end{document}

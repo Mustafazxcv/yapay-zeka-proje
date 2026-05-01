@@ -82,7 +82,6 @@ def fetch_news(
         response = requests.get(API_URL, params=params, timeout=30)
         request_count += 1
 
-        # Bazi API'ler rate limit bilgisini header'da dondurur.
         limit_info["limit"] = response.headers.get("X-RateLimit-Limit")
         limit_info["remaining"] = response.headers.get("X-RateLimit-Remaining")
         limit_info["retry_after"] = response.headers.get("Retry-After")
@@ -188,15 +187,15 @@ def main():
     )
     parser.add_argument("--api-key", default=os.getenv("NEWSDATA_API_KEY"))
     parser.add_argument("--query", default=env_str("NEWS_QUERY", "technology"))
-    parser.add_argument("--language", default=env_str("NEWS_LANGUAGE", "tr"))
-    parser.add_argument("--country", default=env_str("NEWS_COUNTRY", "tr"))
+    parser.add_argument("--language", default=env_str("NEWS_LANGUAGE", "en"))
+    parser.add_argument("--country", default=env_str("NEWS_COUNTRY", "us"))
     parser.add_argument("--category", default=env_str("NEWS_CATEGORY", ""))
     parser.add_argument("--max-pages", type=int, default=env_int("NEWS_MAX_PAGES", 3))
     parser.add_argument(
-        "--out-json", default=env_str("NEWS_OUT_JSON", "data/headlines_raw.json")
+        "--out-json", default=env_str("NEWS_OUT_JSON", "data/all/headlines_all.json")
     )
     parser.add_argument(
-        "--out-csv", default=env_str("NEWS_OUT_CSV", "data/headlines_raw.csv")
+        "--out-csv", default=env_str("NEWS_OUT_CSV", "data/all/headlines_all.csv")
     )
     parser.add_argument(
         "--append-mode",
@@ -206,10 +205,12 @@ def main():
     )
 
     args = parser.parse_args()
+    args.language = "en"
+    args.country = "us"
 
     if not args.api_key:
         print(
-            "Hata: API anahtari eksik. NEWSDATA_API_KEY degerini .env dosyasina yazin veya --api-key kullanin.",
+            "Hata: API anahtari eksik.",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -228,7 +229,7 @@ def main():
         sys.exit(1)
 
     if not headlines:
-        print("Hic yeni baslik cekilemedi. Sorgu, filtreler veya API limitini kontrol edin.")
+        print("Hic yeni baslik cekilemedi.")
         if limit_info["retry_after"]:
             print(f"Tahmini bekleme suresi (saniye): {limit_info['retry_after']}")
         existing_count = count_existing_records(args.out_json)
