@@ -1,0 +1,17 @@
+model,cosine_avg,semantic_avg
+word2vec_stemmed_skipgram_win2_dim300.model,0.9994,3.4
+word2vec_stemmed_skipgram_win4_dim100.model,0.9954,3.4
+word2vec_stemmed_cbow_win4_dim300.model,0.9999,3.2
+word2vec_lemmatized_skipgram_win2_dim300.model,0.9995,3.2
+word2vec_lemmatized_skipgram_win2_dim100.model,0.999,3.2
+word2vec_stemmed_skipgram_win2_dim100.model,0.9988,3.2
+word2vec_lemmatized_cbow_win4_dim100.model,0.9999,3.0
+word2vec_lemmatized_cbow_win4_dim300.model,0.9999,3.0
+word2vec_stemmed_cbow_win4_dim100.model,0.9999,3.0
+word2vec_stemmed_cbow_win2_dim300.model,0.9998,3.0
+word2vec_stemmed_cbow_win2_dim100.model,0.9996,3.0
+word2vec_lemmatized_cbow_win2_dim300.model,0.9995,3.0
+word2vec_lemmatized_cbow_win2_dim100.model,0.9993,3.0
+word2vec_lemmatized_skipgram_win4_dim300.model,0.9991,3.0
+word2vec_lemmatized_skipgram_win4_dim100.model,0.998,3.0
+word2vec_stemmed_skipgram_win4_dim300.model,0.9977,3.0

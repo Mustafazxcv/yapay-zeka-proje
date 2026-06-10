@@ -1,0 +1,1026 @@
+{
+  "word2vec_lemmatized_cbow_win2_dim100.model": {
+    "dataset": "lemmatized",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "company",
+      "fuel",
+      "artificial",
+      "intelligence",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artificial intelligence education focus ignitend conference news dakota",
+        "source": "News Dakota",
+        "similarity": 0.9994
+      },
+      {
+        "rank": 2,
+        "doc_id": 420,
+        "title": "Peer review in the time of artificial intelligence - Nature",
+        "content": "peer review time artificial intelligence nature",
+        "source": "Nature",
+        "similarity": 0.9993
+      },
+      {
+        "rank": 3,
+        "doc_id": 442,
+        "title": "Bayraktar maps Türkiye’s energy future from Akkuyu to artificial intelligence - AzerNews",
+        "content": "bayraktar map türkiye energy future akkuyu artificial intelligence azernews",
+        "source": "AzerNews",
+        "similarity": 0.9993
+      },
+      {
+        "rank": 4,
+        "doc_id": 397,
+        "title": "Artificial intelligence powers Egypt’s USD 27bn city project - Computer Weekly",
+        "content": "artificial intelligence power egypt usd bn city project computer weekly",
+        "source": "Computer Weekly",
+        "similarity": 0.9993
+      },
+      {
+        "rank": 5,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artificial intelligence blame tumbler ridge shooting carney minister say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9992
+      }
+    ],
+    "cosine_scores": [
+      0.9994,
+      0.9993,
+      0.9993,
+      0.9993,
+      0.9992
+    ],
+    "cosine_avg": 0.9993
+  },
+  "word2vec_lemmatized_skipgram_win2_dim100.model": {
+    "dataset": "lemmatized",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "company",
+      "fuel",
+      "artificial",
+      "intelligence",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 397,
+        "title": "Artificial intelligence powers Egypt’s USD 27bn city project - Computer Weekly",
+        "content": "artificial intelligence power egypt usd bn city project computer weekly",
+        "source": "Computer Weekly",
+        "similarity": 0.9995
+      },
+      {
+        "rank": 2,
+        "doc_id": 368,
+        "title": "Leveraging Artificial Intelligence to Prevent Homelessness in Los Angeles County - America's Essential Hospitals",
+        "content": "leveraging artificial intelligence prevent homelessness los angeles county america essential hospital",
+        "source": "America's Essential Hospitals",
+        "similarity": 0.9992
+      },
+      {
+        "rank": 3,
+        "doc_id": 972,
+        "title": "Forbes 2026 AI 50 List | Top Artificial Intelligence Companies - Forbes",
+        "content": "forbes ai list top artificial intelligence company forbes",
+        "source": "Forbes",
+        "similarity": 0.999
+      },
+      {
+        "rank": 4,
+        "doc_id": 437,
+        "title": "Senator Banks raises concerns over Chinese espionage targeting U.S. artificial intelligence sector - WBIW",
+        "content": "senator bank raise concern chinese espionage targeting u.s. artificial intelligence sector wbiw",
+        "source": "WBIW",
+        "similarity": 0.9988
+      },
+      {
+        "rank": 5,
+        "doc_id": 386,
+        "title": "IN AI: Braun unveils artificial intelligence business portal - Indiana Capital Chronicle",
+        "content": "ai braun unveils artificial intelligence business portal indiana capital chronicle",
+        "source": "Indiana Capital Chronicle",
+        "similarity": 0.9987
+      }
+    ],
+    "cosine_scores": [
+      0.9995,
+      0.9992,
+      0.999,
+      0.9988,
+      0.9987
+    ],
+    "cosine_avg": 0.999
+  },
+  "word2vec_lemmatized_cbow_win4_dim100.model": {
+    "dataset": "lemmatized",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "company",
+      "fuel",
+      "artificial",
+      "intelligence",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 442,
+        "title": "Bayraktar maps Türkiye’s energy future from Akkuyu to artificial intelligence - AzerNews",
+        "content": "bayraktar map türkiye energy future akkuyu artificial intelligence azernews",
+        "source": "AzerNews",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 2,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artificial intelligence education focus ignitend conference news dakota",
+        "source": "News Dakota",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 3,
+        "doc_id": 420,
+        "title": "Peer review in the time of artificial intelligence - Nature",
+        "content": "peer review time artificial intelligence nature",
+        "source": "Nature",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 4,
+        "doc_id": 397,
+        "title": "Artificial intelligence powers Egypt’s USD 27bn city project - Computer Weekly",
+        "content": "artificial intelligence power egypt usd bn city project computer weekly",
+        "source": "Computer Weekly",
+        "similarity": 0.9998
+      },
+      {
+        "rank": 5,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artificial intelligence blame tumbler ridge shooting carney minister say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9998
+      }
+    ],
+    "cosine_scores": [
+      0.9999,
+      0.9999,
+      0.9999,
+      0.9998,
+      0.9998
+    ],
+    "cosine_avg": 0.9999
+  },
+  "word2vec_lemmatized_skipgram_win4_dim100.model": {
+    "dataset": "lemmatized",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "company",
+      "fuel",
+      "artificial",
+      "intelligence",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artificial intelligence blame tumbler ridge shooting carney minister say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9991
+      },
+      {
+        "rank": 2,
+        "doc_id": 370,
+        "title": "As artificial intelligence shows off diagnostic chops, scientists reckon with the way forward - statnews.com",
+        "content": "artificial intelligence show diagnostic chop scientist reckon way forward statnews.com",
+        "source": "statnews.com",
+        "similarity": 0.9979
+      },
+      {
+        "rank": 3,
+        "doc_id": 368,
+        "title": "Leveraging Artificial Intelligence to Prevent Homelessness in Los Angeles County - America's Essential Hospitals",
+        "content": "leveraging artificial intelligence prevent homelessness los angeles county america essential hospital",
+        "source": "America's Essential Hospitals",
+        "similarity": 0.9976
+      },
+      {
+        "rank": 4,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artificial intelligence education focus ignitend conference news dakota",
+        "source": "News Dakota",
+        "similarity": 0.9975
+      },
+      {
+        "rank": 5,
+        "doc_id": 264,
+        "title": "Taxing Artificial Intelligence Would Be a Big Mistake - Bloomberg.com",
+        "content": "taxing artificial intelligence would big mistake bloomberg.com",
+        "source": "Bloomberg.com",
+        "similarity": 0.9972
+      }
+    ],
+    "cosine_scores": [
+      0.9991,
+      0.9979,
+      0.9976,
+      0.9975,
+      0.9972
+    ],
+    "cosine_avg": 0.9979
+  },
+  "word2vec_lemmatized_cbow_win2_dim300.model": {
+    "dataset": "lemmatized",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "company",
+      "fuel",
+      "artificial",
+      "intelligence",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 372,
+        "title": "FAQ on AI in OOH advertising: How artificial intelligence is reshaping the channel in 2026 - eMarketer",
+        "content": "faq ai ooh advertising artificial intelligence reshaping channel emarketer",
+        "source": "eMarketer",
+        "similarity": 0.9996
+      },
+      {
+        "rank": 2,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artificial intelligence education focus ignitend conference news dakota",
+        "source": "News Dakota",
+        "similarity": 0.9995
+      },
+      {
+        "rank": 3,
+        "doc_id": 420,
+        "title": "Peer review in the time of artificial intelligence - Nature",
+        "content": "peer review time artificial intelligence nature",
+        "source": "Nature",
+        "similarity": 0.9995
+      },
+      {
+        "rank": 4,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artificial intelligence blame tumbler ridge shooting carney minister say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9995
+      },
+      {
+        "rank": 5,
+        "doc_id": 446,
+        "title": "Explainable AI needs formalization - npj Artificial Intelligence - Nature",
+        "content": "explainable ai need formalization npj artificial intelligence nature",
+        "source": "Nature",
+        "similarity": 0.9995
+      }
+    ],
+    "cosine_scores": [
+      0.9996,
+      0.9995,
+      0.9995,
+      0.9995,
+      0.9995
+    ],
+    "cosine_avg": 0.9995
+  },
+  "word2vec_lemmatized_skipgram_win2_dim300.model": {
+    "dataset": "lemmatized",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "company",
+      "fuel",
+      "artificial",
+      "intelligence",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 397,
+        "title": "Artificial intelligence powers Egypt’s USD 27bn city project - Computer Weekly",
+        "content": "artificial intelligence power egypt usd bn city project computer weekly",
+        "source": "Computer Weekly",
+        "similarity": 0.9997
+      },
+      {
+        "rank": 2,
+        "doc_id": 972,
+        "title": "Forbes 2026 AI 50 List | Top Artificial Intelligence Companies - Forbes",
+        "content": "forbes ai list top artificial intelligence company forbes",
+        "source": "Forbes",
+        "similarity": 0.9997
+      },
+      {
+        "rank": 3,
+        "doc_id": 386,
+        "title": "IN AI: Braun unveils artificial intelligence business portal - Indiana Capital Chronicle",
+        "content": "ai braun unveils artificial intelligence business portal indiana capital chronicle",
+        "source": "Indiana Capital Chronicle",
+        "similarity": 0.9996
+      },
+      {
+        "rank": 4,
+        "doc_id": 368,
+        "title": "Leveraging Artificial Intelligence to Prevent Homelessness in Los Angeles County - America's Essential Hospitals",
+        "content": "leveraging artificial intelligence prevent homelessness los angeles county america essential hospital",
+        "source": "America's Essential Hospitals",
+        "similarity": 0.9995
+      },
+      {
+        "rank": 5,
+        "doc_id": 394,
+        "title": "Multi-agent artificial intelligence designs novel catalysts for ultrafast water purification - Nature",
+        "content": "multi agent artificial intelligence design novel catalyst ultrafast water purification nature",
+        "source": "Nature",
+        "similarity": 0.9994
+      }
+    ],
+    "cosine_scores": [
+      0.9997,
+      0.9997,
+      0.9996,
+      0.9995,
+      0.9994
+    ],
+    "cosine_avg": 0.9996
+  },
+  "word2vec_lemmatized_cbow_win4_dim300.model": {
+    "dataset": "lemmatized",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "company",
+      "fuel",
+      "artificial",
+      "intelligence",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 446,
+        "title": "Explainable AI needs formalization - npj Artificial Intelligence - Nature",
+        "content": "explainable ai need formalization npj artificial intelligence nature",
+        "source": "Nature",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 2,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artificial intelligence education focus ignitend conference news dakota",
+        "source": "News Dakota",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 3,
+        "doc_id": 420,
+        "title": "Peer review in the time of artificial intelligence - Nature",
+        "content": "peer review time artificial intelligence nature",
+        "source": "Nature",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 4,
+        "doc_id": 372,
+        "title": "FAQ on AI in OOH advertising: How artificial intelligence is reshaping the channel in 2026 - eMarketer",
+        "content": "faq ai ooh advertising artificial intelligence reshaping channel emarketer",
+        "source": "eMarketer",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 5,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artificial intelligence blame tumbler ridge shooting carney minister say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9999
+      }
+    ],
+    "cosine_scores": [
+      0.9999,
+      0.9999,
+      0.9999,
+      0.9999,
+      0.9999
+    ],
+    "cosine_avg": 0.9999
+  },
+  "word2vec_lemmatized_skipgram_win4_dim300.model": {
+    "dataset": "lemmatized",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "company",
+      "fuel",
+      "artificial",
+      "intelligence",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artificial intelligence blame tumbler ridge shooting carney minister say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9994
+      },
+      {
+        "rank": 2,
+        "doc_id": 368,
+        "title": "Leveraging Artificial Intelligence to Prevent Homelessness in Los Angeles County - America's Essential Hospitals",
+        "content": "leveraging artificial intelligence prevent homelessness los angeles county america essential hospital",
+        "source": "America's Essential Hospitals",
+        "similarity": 0.9994
+      },
+      {
+        "rank": 3,
+        "doc_id": 397,
+        "title": "Artificial intelligence powers Egypt’s USD 27bn city project - Computer Weekly",
+        "content": "artificial intelligence power egypt usd bn city project computer weekly",
+        "source": "Computer Weekly",
+        "similarity": 0.9988
+      },
+      {
+        "rank": 4,
+        "doc_id": 370,
+        "title": "As artificial intelligence shows off diagnostic chops, scientists reckon with the way forward - statnews.com",
+        "content": "artificial intelligence show diagnostic chop scientist reckon way forward statnews.com",
+        "source": "statnews.com",
+        "similarity": 0.9988
+      },
+      {
+        "rank": 5,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artificial intelligence education focus ignitend conference news dakota",
+        "source": "News Dakota",
+        "similarity": 0.9985
+      }
+    ],
+    "cosine_scores": [
+      0.9994,
+      0.9994,
+      0.9988,
+      0.9988,
+      0.9985
+    ],
+    "cosine_avg": 0.999
+  },
+  "word2vec_stemmed_cbow_win2_dim100.model": {
+    "dataset": "stemmed",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "compani",
+      "fuel",
+      "artifici",
+      "intellig",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 420,
+        "title": "Peer review in the time of artificial intelligence - Nature",
+        "content": "peer review time artifici intellig natur",
+        "source": "Nature",
+        "similarity": 0.9996
+      },
+      {
+        "rank": 2,
+        "doc_id": 372,
+        "title": "FAQ on AI in OOH advertising: How artificial intelligence is reshaping the channel in 2026 - eMarketer",
+        "content": "faq ai ooh advertis artifici intellig reshap channel emarket",
+        "source": "eMarketer",
+        "similarity": 0.9996
+      },
+      {
+        "rank": 3,
+        "doc_id": 446,
+        "title": "Explainable AI needs formalization - npj Artificial Intelligence - Nature",
+        "content": "explain ai need formal npj artifici intellig natur",
+        "source": "Nature",
+        "similarity": 0.9996
+      },
+      {
+        "rank": 4,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artifici intellig educ focu ignitend confer news dakota",
+        "source": "News Dakota",
+        "similarity": 0.9996
+      },
+      {
+        "rank": 5,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artifici intellig blame tumbler ridg shoot carney minist say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9996
+      }
+    ],
+    "cosine_scores": [
+      0.9996,
+      0.9996,
+      0.9996,
+      0.9996,
+      0.9996
+    ],
+    "cosine_avg": 0.9996
+  },
+  "word2vec_stemmed_skipgram_win2_dim100.model": {
+    "dataset": "stemmed",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "compani",
+      "fuel",
+      "artifici",
+      "intellig",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 368,
+        "title": "Leveraging Artificial Intelligence to Prevent Homelessness in Los Angeles County - America's Essential Hospitals",
+        "content": "leverag artifici intellig prevent homeless lo angel counti america essenti hospit",
+        "source": "America's Essential Hospitals",
+        "similarity": 0.9995
+      },
+      {
+        "rank": 2,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artifici intellig educ focu ignitend confer news dakota",
+        "source": "News Dakota",
+        "similarity": 0.999
+      },
+      {
+        "rank": 3,
+        "doc_id": 972,
+        "title": "Forbes 2026 AI 50 List | Top Artificial Intelligence Companies - Forbes",
+        "content": "forb ai list top artifici intellig compani forb",
+        "source": "Forbes",
+        "similarity": 0.9989
+      },
+      {
+        "rank": 4,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artifici intellig blame tumbler ridg shoot carney minist say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9989
+      },
+      {
+        "rank": 5,
+        "doc_id": 370,
+        "title": "As artificial intelligence shows off diagnostic chops, scientists reckon with the way forward - statnews.com",
+        "content": "artifici intellig show diagnost chop scientist reckon way forward statnews.com",
+        "source": "statnews.com",
+        "similarity": 0.9987
+      }
+    ],
+    "cosine_scores": [
+      0.9995,
+      0.999,
+      0.9989,
+      0.9989,
+      0.9987
+    ],
+    "cosine_avg": 0.999
+  },
+  "word2vec_stemmed_cbow_win4_dim100.model": {
+    "dataset": "stemmed",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "compani",
+      "fuel",
+      "artifici",
+      "intellig",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 972,
+        "title": "Forbes 2026 AI 50 List | Top Artificial Intelligence Companies - Forbes",
+        "content": "forb ai list top artifici intellig compani forb",
+        "source": "Forbes",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 2,
+        "doc_id": 420,
+        "title": "Peer review in the time of artificial intelligence - Nature",
+        "content": "peer review time artifici intellig natur",
+        "source": "Nature",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 3,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artifici intellig educ focu ignitend confer news dakota",
+        "source": "News Dakota",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 4,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artifici intellig blame tumbler ridg shoot carney minist say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 5,
+        "doc_id": 442,
+        "title": "Bayraktar maps Türkiye’s energy future from Akkuyu to artificial intelligence - AzerNews",
+        "content": "bayraktar map türkiy energi futur akkuyu artifici intellig azernew",
+        "source": "AzerNews",
+        "similarity": 0.9998
+      }
+    ],
+    "cosine_scores": [
+      0.9999,
+      0.9999,
+      0.9999,
+      0.9999,
+      0.9998
+    ],
+    "cosine_avg": 0.9999
+  },
+  "word2vec_stemmed_skipgram_win4_dim100.model": {
+    "dataset": "stemmed",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "compani",
+      "fuel",
+      "artifici",
+      "intellig",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 264,
+        "title": "Taxing Artificial Intelligence Would Be a Big Mistake - Bloomberg.com",
+        "content": "tax artifici intellig would big mistak bloomberg.com",
+        "source": "Bloomberg.com",
+        "similarity": 0.9961
+      },
+      {
+        "rank": 2,
+        "doc_id": 439,
+        "title": "Prediction: This Under-the-Radar Artificial Intelligence (AI) Stock Could Be a Multibagger by the End of 2027 - The Globe and Mail",
+        "content": "predict radar artifici intellig ai stock could multibagg end globe mail",
+        "source": "The Globe and Mail",
+        "similarity": 0.9956
+      },
+      {
+        "rank": 3,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artifici intellig blame tumbler ridg shoot carney minist say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9955
+      },
+      {
+        "rank": 4,
+        "doc_id": 830,
+        "title": "Prediction: This under-the-radar artificial intelligence (AI) stock could be a multibagger by the end of 2027 - MSN",
+        "content": "predict radar artifici intellig ai stock could multibagg end msn",
+        "source": "MSN",
+        "similarity": 0.9951
+      },
+      {
+        "rank": 5,
+        "doc_id": 397,
+        "title": "Artificial intelligence powers Egypt’s USD 27bn city project - Computer Weekly",
+        "content": "artifici intellig power egypt usd bn citi project comput weekli",
+        "source": "Computer Weekly",
+        "similarity": 0.995
+      }
+    ],
+    "cosine_scores": [
+      0.9961,
+      0.9956,
+      0.9955,
+      0.9951,
+      0.995
+    ],
+    "cosine_avg": 0.9955
+  },
+  "word2vec_stemmed_cbow_win2_dim300.model": {
+    "dataset": "stemmed",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "compani",
+      "fuel",
+      "artifici",
+      "intellig",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artifici intellig educ focu ignitend confer news dakota",
+        "source": "News Dakota",
+        "similarity": 0.9998
+      },
+      {
+        "rank": 2,
+        "doc_id": 442,
+        "title": "Bayraktar maps Türkiye’s energy future from Akkuyu to artificial intelligence - AzerNews",
+        "content": "bayraktar map türkiy energi futur akkuyu artifici intellig azernew",
+        "source": "AzerNews",
+        "similarity": 0.9998
+      },
+      {
+        "rank": 3,
+        "doc_id": 446,
+        "title": "Explainable AI needs formalization - npj Artificial Intelligence - Nature",
+        "content": "explain ai need formal npj artifici intellig natur",
+        "source": "Nature",
+        "similarity": 0.9998
+      },
+      {
+        "rank": 4,
+        "doc_id": 420,
+        "title": "Peer review in the time of artificial intelligence - Nature",
+        "content": "peer review time artifici intellig natur",
+        "source": "Nature",
+        "similarity": 0.9998
+      },
+      {
+        "rank": 5,
+        "doc_id": 372,
+        "title": "FAQ on AI in OOH advertising: How artificial intelligence is reshaping the channel in 2026 - eMarketer",
+        "content": "faq ai ooh advertis artifici intellig reshap channel emarket",
+        "source": "eMarketer",
+        "similarity": 0.9998
+      }
+    ],
+    "cosine_scores": [
+      0.9998,
+      0.9998,
+      0.9998,
+      0.9998,
+      0.9998
+    ],
+    "cosine_avg": 0.9998
+  },
+  "word2vec_stemmed_skipgram_win2_dim300.model": {
+    "dataset": "stemmed",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "compani",
+      "fuel",
+      "artifici",
+      "intellig",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 368,
+        "title": "Leveraging Artificial Intelligence to Prevent Homelessness in Los Angeles County - America's Essential Hospitals",
+        "content": "leverag artifici intellig prevent homeless lo angel counti america essenti hospit",
+        "source": "America's Essential Hospitals",
+        "similarity": 0.9998
+      },
+      {
+        "rank": 2,
+        "doc_id": 972,
+        "title": "Forbes 2026 AI 50 List | Top Artificial Intelligence Companies - Forbes",
+        "content": "forb ai list top artifici intellig compani forb",
+        "source": "Forbes",
+        "similarity": 0.9996
+      },
+      {
+        "rank": 3,
+        "doc_id": 386,
+        "title": "IN AI: Braun unveils artificial intelligence business portal - Indiana Capital Chronicle",
+        "content": "ai braun unveil artifici intellig busi portal indiana capit chronicl",
+        "source": "Indiana Capital Chronicle",
+        "similarity": 0.9993
+      },
+      {
+        "rank": 4,
+        "doc_id": 397,
+        "title": "Artificial intelligence powers Egypt’s USD 27bn city project - Computer Weekly",
+        "content": "artifici intellig power egypt usd bn citi project comput weekli",
+        "source": "Computer Weekly",
+        "similarity": 0.9992
+      },
+      {
+        "rank": 5,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artifici intellig blame tumbler ridg shoot carney minist say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9992
+      }
+    ],
+    "cosine_scores": [
+      0.9998,
+      0.9996,
+      0.9993,
+      0.9992,
+      0.9992
+    ],
+    "cosine_avg": 0.9994
+  },
+  "word2vec_stemmed_cbow_win4_dim300.model": {
+    "dataset": "stemmed",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "compani",
+      "fuel",
+      "artifici",
+      "intellig",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 405,
+        "title": "Artificial Intelligence in Education is Focus of IgniteND Conference - News Dakota",
+        "content": "artifici intellig educ focu ignitend confer news dakota",
+        "source": "News Dakota",
+        "similarity": 1.0
+      },
+      {
+        "rank": 2,
+        "doc_id": 972,
+        "title": "Forbes 2026 AI 50 List | Top Artificial Intelligence Companies - Forbes",
+        "content": "forb ai list top artifici intellig compani forb",
+        "source": "Forbes",
+        "similarity": 1.0
+      },
+      {
+        "rank": 3,
+        "doc_id": 420,
+        "title": "Peer review in the time of artificial intelligence - Nature",
+        "content": "peer review time artifici intellig natur",
+        "source": "Nature",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 4,
+        "doc_id": 446,
+        "title": "Explainable AI needs formalization - npj Artificial Intelligence - Nature",
+        "content": "explain ai need formal npj artifici intellig natur",
+        "source": "Nature",
+        "similarity": 0.9999
+      },
+      {
+        "rank": 5,
+        "doc_id": 442,
+        "title": "Bayraktar maps Türkiye’s energy future from Akkuyu to artificial intelligence - AzerNews",
+        "content": "bayraktar map türkiy energi futur akkuyu artifici intellig azernew",
+        "source": "AzerNews",
+        "similarity": 0.9999
+      }
+    ],
+    "cosine_scores": [
+      1.0,
+      1.0,
+      0.9999,
+      0.9999,
+      0.9999
+    ],
+    "cosine_avg": 0.9999
+  },
+  "word2vec_stemmed_skipgram_win4_dim300.model": {
+    "dataset": "stemmed",
+    "query_title": "Reddit's CEO calls his company 'the fuel' for artificial intelligence - CNBC",
+    "query_tokens": [
+      "reddit",
+      "ceo",
+      "call",
+      "compani",
+      "fuel",
+      "artifici",
+      "intellig",
+      "cnbc"
+    ],
+    "top_matches": [
+      {
+        "rank": 1,
+        "doc_id": 2714,
+        "title": "Artificial intelligence is not to blame in Tumbler Ridge shooting, Carney minister says - Toronto Star",
+        "content": "artifici intellig blame tumbler ridg shoot carney minist say toronto star",
+        "source": "Toronto Star",
+        "similarity": 0.9982
+      },
+      {
+        "rank": 2,
+        "doc_id": 397,
+        "title": "Artificial intelligence powers Egypt’s USD 27bn city project - Computer Weekly",
+        "content": "artifici intellig power egypt usd bn citi project comput weekli",
+        "source": "Computer Weekly",
+        "similarity": 0.998
+      },
+      {
+        "rank": 3,
+        "doc_id": 439,
+        "title": "Prediction: This Under-the-Radar Artificial Intelligence (AI) Stock Could Be a Multibagger by the End of 2027 - The Globe and Mail",
+        "content": "predict radar artifici intellig ai stock could multibagg end globe mail",
+        "source": "The Globe and Mail",
+        "similarity": 0.9977
+      },
+      {
+        "rank": 4,
+        "doc_id": 264,
+        "title": "Taxing Artificial Intelligence Would Be a Big Mistake - Bloomberg.com",
+        "content": "tax artifici intellig would big mistak bloomberg.com",
+        "source": "Bloomberg.com",
+        "similarity": 0.9976
+      },
+      {
+        "rank": 5,
+        "doc_id": 425,
+        "title": "Transformational Utah Investment in Artificial Intelligence and Computing to Advance Health and Discovery | Newswise - Newswise",
+        "content": "transform utah invest artifici intellig comput advanc health discoveri newswis newswis",
+        "source": "Newswise",
+        "similarity": 0.9975
+      }
+    ],
+    "cosine_scores": [
+      0.9982,
+      0.998,
+      0.9977,
+      0.9976,
+      0.9975
+    ],
+    "cosine_avg": 0.9978
+  }
+}

@@ -57,8 +57,11 @@ Olusan dosyalar:
 
 ## Veri analizi ve cogaltma tespiti (Jupyter)
 
-Ciktilari:
-- `data/processed/all/headlines_normalized_all.csv`
-- `data/processed/all/headlines_normalized_all.json`
-- `data/results/all/duplicate_pairs_all.csv`
-- `data/results/all/duplicate_pairs_all.json`
+Tum analiz adimlari `analysis_pipeline.ipynb` icindedir.
+
+Notebook'u calistirmak icin:
+
+```bash
+jupyter notebook analysis_pipeline.ipynb
+```
+

@@ -1,0 +1,802 @@
+{
+  "word2vec_lemmatized_cbow_win2_dim100.model": {
+    "vocab": 6911,
+    "tests": {
+      "technology": [
+        [
+          "robotics",
+          0.9986
+        ],
+        [
+          "innovation",
+          0.9985
+        ],
+        [
+          "startup",
+          0.9985
+        ],
+        [
+          "million",
+          0.9984
+        ],
+        [
+          "say",
+          0.9984
+        ]
+      ],
+      "market": [
+        [
+          "april",
+          0.9939
+        ],
+        [
+          "stock",
+          0.9927
+        ],
+        [
+          "u",
+          0.9925
+        ],
+        [
+          "today",
+          0.9924
+        ],
+        [
+          "price",
+          0.9921
+        ]
+      ],
+      "artificial": [
+        [
+          "nature",
+          0.9456
+        ],
+        [
+          "agentic",
+          0.9412
+        ],
+        [
+          "show",
+          0.9401
+        ],
+        [
+          "center",
+          0.9384
+        ],
+        [
+          "major",
+          0.9377
+        ]
+      ]
+    }
+  },
+  "word2vec_lemmatized_skipgram_win2_dim100.model": {
+    "vocab": 6911,
+    "tests": {
+      "technology": [
+        [
+          "india",
+          0.9961
+        ],
+        [
+          "funding",
+          0.9957
+        ],
+        [
+          "bank",
+          0.9956
+        ],
+        [
+          "guidance",
+          0.9955
+        ],
+        [
+          "defense",
+          0.9955
+        ]
+      ],
+      "market": [
+        [
+          "today",
+          0.9852
+        ],
+        [
+          "stock",
+          0.9743
+        ],
+        [
+          "buy",
+          0.9533
+        ],
+        [
+          "lap",
+          0.952
+        ],
+        [
+          "know",
+          0.9495
+        ]
+      ],
+      "artificial": [
+        [
+          "tomorrow",
+          0.9276
+        ],
+        [
+          "expect",
+          0.9121
+        ],
+        [
+          "swarm",
+          0.9104
+        ],
+        [
+          "radar",
+          0.8966
+        ],
+        [
+          "creeping",
+          0.8962
+        ]
+      ]
+    }
+  },
+  "word2vec_lemmatized_cbow_win4_dim100.model": {
+    "vocab": 6911,
+    "tests": {
+      "technology": [
+        [
+          "innovation",
+          0.9997
+        ],
+        [
+          "healthcare",
+          0.9997
+        ],
+        [
+          "business",
+          0.9996
+        ],
+        [
+          "fintech",
+          0.9996
+        ],
+        [
+          "million",
+          0.9996
+        ]
+      ],
+      "market": [
+        [
+          "today",
+          0.9986
+        ],
+        [
+          "april",
+          0.9985
+        ],
+        [
+          "stock",
+          0.9983
+        ],
+        [
+          "best",
+          0.998
+        ],
+        [
+          "investor",
+          0.9978
+        ]
+      ],
+      "artificial": [
+        [
+          "nature",
+          0.9899
+        ],
+        [
+          "agentic",
+          0.9896
+        ],
+        [
+          "prediction",
+          0.9896
+        ],
+        [
+          "ai",
+          0.9893
+        ],
+        [
+          "next",
+          0.9893
+        ]
+      ]
+    }
+  },
+  "word2vec_lemmatized_skipgram_win4_dim100.model": {
+    "vocab": 6911,
+    "tests": {
+      "technology": [
+        [
+          "innovation",
+          0.9823
+        ],
+        [
+          "startup",
+          0.9811
+        ],
+        [
+          "program",
+          0.9804
+        ],
+        [
+          "nasa",
+          0.9791
+        ],
+        [
+          "pennsylvania",
+          0.9791
+        ]
+      ],
+      "market": [
+        [
+          "today",
+          0.9868
+        ],
+        [
+          "april",
+          0.9702
+        ],
+        [
+          "stock",
+          0.9564
+        ],
+        [
+          "nxp",
+          0.9459
+        ],
+        [
+          "semiconductor",
+          0.9293
+        ]
+      ],
+      "artificial": [
+        [
+          "radar",
+          0.8767
+        ],
+        [
+          "tomorrow",
+          0.8658
+        ],
+        [
+          "intelligence",
+          0.8644
+        ],
+        [
+          "prediction",
+          0.8592
+        ],
+        [
+          "adhd",
+          0.8546
+        ]
+      ]
+    }
+  },
+  "word2vec_lemmatized_cbow_win2_dim300.model": {
+    "vocab": 6911,
+    "tests": {
+      "technology": [
+        [
+          "innovation",
+          0.999
+        ],
+        [
+          "startup",
+          0.9989
+        ],
+        [
+          "healthcare",
+          0.9989
+        ],
+        [
+          "news",
+          0.9988
+        ],
+        [
+          "cybersecurity",
+          0.9988
+        ]
+      ],
+      "market": [
+        [
+          "stock",
+          0.9949
+        ],
+        [
+          "u",
+          0.9946
+        ],
+        [
+          "april",
+          0.9945
+        ],
+        [
+          "semiconductor",
+          0.9944
+        ],
+        [
+          "price",
+          0.9939
+        ]
+      ],
+      "artificial": [
+        [
+          "nature",
+          0.9559
+        ],
+        [
+          "show",
+          0.9517
+        ],
+        [
+          "system",
+          0.9501
+        ],
+        [
+          "ai",
+          0.9501
+        ],
+        [
+          "buy",
+          0.95
+        ]
+      ]
+    }
+  },
+  "word2vec_lemmatized_skipgram_win2_dim300.model": {
+    "vocab": 6911,
+    "tests": {
+      "technology": [
+        [
+          "start",
+          0.9983
+        ],
+        [
+          "india",
+          0.9983
+        ],
+        [
+          "one",
+          0.9983
+        ],
+        [
+          "acquires",
+          0.9982
+        ],
+        [
+          "back",
+          0.9982
+        ]
+      ],
+      "market": [
+        [
+          "today",
+          0.9929
+        ],
+        [
+          "stock",
+          0.9839
+        ],
+        [
+          "lap",
+          0.9794
+        ],
+        [
+          "semiconductor",
+          0.9766
+        ],
+        [
+          "outpaced",
+          0.9741
+        ]
+      ],
+      "artificial": [
+        [
+          "swarm",
+          0.9301
+        ],
+        [
+          "apg",
+          0.9244
+        ],
+        [
+          "creeping",
+          0.924
+        ],
+        [
+          "tomorrow",
+          0.9238
+        ],
+        [
+          "expect",
+          0.9226
+        ]
+      ]
+    }
+  },
+  "word2vec_lemmatized_cbow_win4_dim300.model": {
+    "vocab": 6911,
+    "tests": {
+      "technology": [
+        [
+          "innovation",
+          0.9999
+        ],
+        [
+          "healthcare",
+          0.9999
+        ],
+        [
+          "cybersecurity",
+          0.9998
+        ],
+        [
+          "startup",
+          0.9998
+        ],
+        [
+          "news",
+          0.9998
+        ]
+      ],
+      "market": [
+        [
+          "today",
+          0.9995
+        ],
+        [
+          "stock",
+          0.9994
+        ],
+        [
+          "april",
+          0.9994
+        ],
+        [
+          "investor",
+          0.9992
+        ],
+        [
+          "best",
+          0.9992
+        ]
+      ],
+      "artificial": [
+        [
+          "prediction",
+          0.995
+        ],
+        [
+          "nature",
+          0.9947
+        ],
+        [
+          "ai",
+          0.9944
+        ],
+        [
+          "system",
+          0.9941
+        ],
+        [
+          "model",
+          0.994
+        ]
+      ]
+    }
+  },
+  "word2vec_lemmatized_skipgram_win4_dim300.model": {
+    "vocab": 6911,
+    "tests": {
+      "technology": [
+        [
+          "space",
+          0.993
+        ],
+        [
+          "network",
+          0.9923
+        ],
+        [
+          "student",
+          0.9918
+        ],
+        [
+          "innovation",
+          0.9916
+        ],
+        [
+          "program",
+          0.9915
+        ]
+      ],
+      "market": [
+        [
+          "today",
+          0.9907
+        ],
+        [
+          "stock",
+          0.9823
+        ],
+        [
+          "april",
+          0.9584
+        ],
+        [
+          "semiconductor",
+          0.954
+        ],
+        [
+          "nxp",
+          0.9492
+        ]
+      ],
+      "artificial": [
+        [
+          "ai",
+          0.8651
+        ],
+        [
+          "expect",
+          0.8619
+        ],
+        [
+          "radar",
+          0.8619
+        ],
+        [
+          "prediction",
+          0.8575
+        ],
+        [
+          "tomorrow",
+          0.8527
+        ]
+      ]
+    }
+  },
+  "word2vec_stemmed_cbow_win2_dim100.model": {
+    "vocab": 5969,
+    "tests": {
+      "technology": [],
+      "market": [
+        [
+          "stock",
+          0.9963
+        ],
+        [
+          "today",
+          0.9959
+        ],
+        [
+          "april",
+          0.9954
+        ],
+        [
+          "u",
+          0.9949
+        ],
+        [
+          "semiconductor",
+          0.9949
+        ]
+      ],
+      "artificial": []
+    }
+  },
+  "word2vec_stemmed_skipgram_win2_dim100.model": {
+    "vocab": 5969,
+    "tests": {
+      "technology": [],
+      "market": [
+        [
+          "today",
+          0.9723
+        ],
+        [
+          "stock",
+          0.9596
+        ],
+        [
+          "april",
+          0.9339
+        ],
+        [
+          "lap",
+          0.9179
+        ],
+        [
+          "buy",
+          0.915
+        ]
+      ],
+      "artificial": []
+    }
+  },
+  "word2vec_stemmed_cbow_win4_dim100.model": {
+    "vocab": 5969,
+    "tests": {
+      "technology": [],
+      "market": [
+        [
+          "april",
+          0.9991
+        ],
+        [
+          "today",
+          0.999
+        ],
+        [
+          "stock",
+          0.9987
+        ],
+        [
+          "investor",
+          0.9982
+        ],
+        [
+          "best",
+          0.9981
+        ]
+      ],
+      "artificial": []
+    }
+  },
+  "word2vec_stemmed_skipgram_win4_dim100.model": {
+    "vocab": 5969,
+    "tests": {
+      "technology": [],
+      "market": [
+        [
+          "today",
+          0.988
+        ],
+        [
+          "april",
+          0.9802
+        ],
+        [
+          "stock",
+          0.973
+        ],
+        [
+          "nxp",
+          0.9519
+        ],
+        [
+          "investor",
+          0.9441
+        ]
+      ],
+      "artificial": []
+    }
+  },
+  "word2vec_stemmed_cbow_win2_dim300.model": {
+    "vocab": 5969,
+    "tests": {
+      "technology": [],
+      "market": [
+        [
+          "buy",
+          0.9982
+        ],
+        [
+          "stock",
+          0.9982
+        ],
+        [
+          "today",
+          0.9979
+        ],
+        [
+          "april",
+          0.9979
+        ],
+        [
+          "u",
+          0.9977
+        ]
+      ],
+      "artificial": []
+    }
+  },
+  "word2vec_stemmed_skipgram_win2_dim300.model": {
+    "vocab": 5969,
+    "tests": {
+      "technology": [],
+      "market": [
+        [
+          "today",
+          0.9901
+        ],
+        [
+          "stock",
+          0.9846
+        ],
+        [
+          "april",
+          0.9688
+        ],
+        [
+          "semiconductor",
+          0.9679
+        ],
+        [
+          "buy",
+          0.9652
+        ]
+      ],
+      "artificial": []
+    }
+  },
+  "word2vec_stemmed_cbow_win4_dim300.model": {
+    "vocab": 5969,
+    "tests": {
+      "technology": [],
+      "market": [
+        [
+          "stock",
+          0.9996
+        ],
+        [
+          "april",
+          0.9996
+        ],
+        [
+          "buy",
+          0.9996
+        ],
+        [
+          "today",
+          0.9995
+        ],
+        [
+          "investor",
+          0.9995
+        ]
+      ],
+      "artificial": []
+    }
+  },
+  "word2vec_stemmed_skipgram_win4_dim300.model": {
+    "vocab": 5969,
+    "tests": {
+      "technology": [],
+      "market": [
+        [
+          "today",
+          0.9892
+        ],
+        [
+          "stock",
+          0.9831
+        ],
+        [
+          "april",
+          0.9709
+        ],
+        [
+          "nxp",
+          0.954
+        ],
+        [
+          "investor",
+          0.9476
+        ]
+      ],
+      "artificial": []
+    }
+  }
+}

@@ -5,3 +5,7 @@ nltk
 beautifulsoup4
 playwright
 matplotlib
+gensim>=4.4.0
+pandas
+seaborn
+numpy

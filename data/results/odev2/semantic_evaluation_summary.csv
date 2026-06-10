@@ -1,0 +1,17 @@
+model,semantic_avg
+word2vec_stemmed_skipgram_win2_dim300.model,3.4
+word2vec_stemmed_skipgram_win4_dim100.model,3.4
+word2vec_lemmatized_skipgram_win2_dim100.model,3.2
+word2vec_lemmatized_skipgram_win2_dim300.model,3.2
+word2vec_stemmed_cbow_win4_dim300.model,3.2
+word2vec_stemmed_skipgram_win2_dim100.model,3.2
+word2vec_lemmatized_cbow_win2_dim100.model,3.0
+word2vec_lemmatized_cbow_win2_dim300.model,3.0
+word2vec_lemmatized_cbow_win4_dim100.model,3.0
+word2vec_lemmatized_cbow_win4_dim300.model,3.0
+word2vec_lemmatized_skipgram_win4_dim100.model,3.0
+word2vec_lemmatized_skipgram_win4_dim300.model,3.0
+word2vec_stemmed_cbow_win2_dim100.model,3.0
+word2vec_stemmed_cbow_win2_dim300.model,3.0
+word2vec_stemmed_cbow_win4_dim100.model,3.0
+word2vec_stemmed_skipgram_win4_dim300.model,3.0
